@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InTenYears.InTenYears1"
+             Title="InTenYears1"
+                BackgroundColor="SeaGreen">
+    <Grid RowDefinitions="*,*" Margin="10">
+        <Label TextColor="Turquoise" Text="In ten years you will be ..." Grid.Row="0" x:Name="lblResult"/>
+        <VerticalStackLayout Grid.Row="1" VerticalOptions="End"> 
+            <Label Text="Name" />
+            <Entry Placeholder="Enter your name" Keyboard="Text"/>
+            <Label Text="age"/>
+            <Entry Placeholder="Enter your age" Keyboard="Numeric" />
+            <Button Clicked="Button_Clicked" Text="Submit"/>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
