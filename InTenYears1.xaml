@@ -8,9 +8,9 @@
         <Label TextColor="Turquoise" Text="In ten years you will be ..." Grid.Row="0" x:Name="lblResult"/>
         <VerticalStackLayout Grid.Row="1" VerticalOptions="End"> 
             <Label Text="Name" />
-            <Entry Placeholder="Enter your name" Keyboard="Text"/>
+            <Entry Placeholder="Enter your name" Keyboard="Text" x:Name="EntName"/>
             <Label Text="age"/>
-            <Entry Placeholder="Enter your age" Keyboard="Numeric" />
+            <Entry Placeholder="Enter your age" Keyboard="Numeric" x:Name="EntAge"/>
             <Button Clicked="Button_Clicked" Text="Submit"/>
         </VerticalStackLayout>
     </Grid>
